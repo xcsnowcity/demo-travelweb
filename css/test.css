@@ -1,0 +1,1480 @@
+@font-face {
+    font-family: 'PingFang-SC-Regular';
+    src: url(../font/PingFang-SC-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url(../font/PingFang-SC-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font/icomoon-v1.0/fonts/icomoon.ttf');
+    src:  url('../font/icomoon-v1.0/fonts/icomoon.eot') format('embedded-opentype'),
+      url('../font/icomoon-v1.0/fonts/icomoon.ttf') format('truetype'),
+      url('../font/icomoon-v1.0/fonts/icomoon.woff') format('woff'),
+      url('../font/icomoon-v1.0/fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow-outline-right:before {
+    content: "\e904";
+    color: #fff;
+    font-size: 48px;
+  }
+  .icon-arrow-right-alt1:before {
+    content: "\e905";
+    
+  }
+  .icon-search:before {
+    content: "\e901";
+  }
+  .icon-zoom:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .icon-magnifier:before {
+    content: "\e901";
+  }
+  .icon-magnifying-glass:before {
+    content: "\e901";
+  }
+  .icon-sina-weibo:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .icon-wechat:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-qq:before {
+    content: "\e900";
+    color: #fff;
+  }
+  .icon-circle-right:before {
+    content: "\ea42";
+  }
+  
+body {
+    font-family: 'PingFang-SC-Regular';
+}
+
+.topbar1 {
+    background-color: #2A2A2A;
+    width: 1355px;
+    margin: 0 auto;
+}
+
+.topbar1 .nav1 {
+    width: 1152px;
+    height: 32px;
+    margin: 0 auto;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.topbar1 .nav1 .iconbar {
+    width: 225px;
+    height: 20px;
+    /* float: right; */
+    /* 上行无效，因为flex容器里面的子元素被称为项目，项目的float、clear和vertical-align属性将失效。 */ 
+    display: flex;
+    align-items: center;
+}
+
+.iconbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.iconbar ul li {
+    margin-right: 16px;
+}
+
+.iconbar ul li:nth-child(2) {
+    width: 1px;
+    color: #D8D8D8;
+    font-size: 18px;
+    cursor: default;
+}
+
+.iconbar ul li:nth-child(6) a {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.iconbar ul li:last-child {
+    margin-right: 0;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.iconbar ul li:last-child a {
+    color: #FFFFFF;
+
+}
+
+.topbar1 .nav1 > ul {
+    
+    width: 408px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.topbar1 .nav1 > ul > li {
+    float: left ;
+    height: 32px;
+    margin-right: 18px;
+    display:flex;
+    align-items:center;
+    font-size: 12px;
+    /* position: relative; */
+}
+
+.topbar1 .nav1 a {
+    display:flex;
+    align-items:center;
+    color:#fff;  
+    /* 超级链接不从父亲继承颜色 */
+}
+
+.topbar1 .nav1 > ul > li .down {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    /* margin-left: 3px;
+    margin-top: 3px; */
+    transition: transform 0.5s;
+}
+
+.topbar1 .nav1 > ul > li:hover .down {
+    transform: rotate(180deg);
+    /* transform-origin: 3.5px 3.5px; */
+}
+
+.down .cube1 {
+    position: absolute;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: #2A2A2A;
+    top: 2px;
+    z-index: 9999;
+}
+
+.down .cube2 {
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.topbar1 .nav1 > ul > li:hover .down .cube2 {
+    background-color: #20BD9A;
+}
+   
+.topbar1 .nav1 > ul > li:hover > a {
+    color:#20BD9A;
+}
+
+.topbar1 .nav1 > ul > li:last-child {
+    margin-right: 0;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(1) {
+    width: 36px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(2) {
+    width: 24px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(3) {
+    width: 38px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(4) {
+    width: 48px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(5) {
+    width: 38px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(6) {
+    width: 68px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(7) {
+    width: 48px;
+}
+
+.topbar1 .nav1 > ul > li .menu {
+    position: absolute;
+    background-color: #fff;
+    top: 29px;
+    z-index: 9999;
+    display: none;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.20) ;
+}
+.topbar1 .nav1 > ul > li .menu1 {
+    width: 121px;
+    /* height: 168px; */
+    /* 无需定义高度，有文字内容自然撑开 */
+}
+
+.topbar1 .nav1 > ul > li .menu2 {
+    width: 76px;
+    /* height: 174px; */
+}
+
+.topbar1 .nav1 > ul > li .menu3 {
+    width: 64px;
+    /* height: 66px; */
+}
+
+.topbar1 .nav1 > ul > li:hover .menu {
+    display: block;
+}
+
+.topbar1 .nav1 > ul > li .menu ul {
+    padding: 8px;
+}
+
+.topbar1 .nav1 > ul > li .menu a {
+    font-size: 12px;
+    color: #1C1F21;
+    line-height: 20px;
+}
+
+.topbar1 .nav1 > ul > li .menu a:hover {
+    color: #20BD9A;
+}
+
+.topbar2 {
+    margin: 0 auto;
+    width: 1355px;
+    height: 40px;
+    background-color: #20BD9A;
+}
+
+.topbar2 .nav2 {
+    height: 40px;
+    /* 用flex设置垂直居中要设置父盒子的高度 */
+    width: 1152px;
+    margin: 0 auto;
+    display:flex;
+    align-items:center;
+}
+
+/* .topbar2 .nav2 > ul {
+    overflow: hidden;
+} */
+
+.topbar2 .nav2 > ul > li {
+    height: 40px;
+    float: left;
+    margin-right: 18px;
+    display:flex;
+    align-items:center;
+    font-size: 16px;
+    position: relative;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(1) {
+    width: 96px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(2) {
+    width: 64px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(3) {
+    width: 64px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(4) {
+    width: 32px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(5) {
+    width: 80px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(6) {
+    width: 32px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(7) {
+    width: 32px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(8) {
+    width: 32px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(9) {
+    width: 32px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(10) {
+    width: 64px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(11) {
+    width: 80px;
+}
+
+.topbar2 .nav2 > ul > li:nth-child(12) {
+    width: 64px;
+}
+
+.topbar2 .nav2 > ul > li a {
+    color: #fff;
+}
+
+.topbar2 .nav2 > ul > li div.arrow {
+    position: absolute;
+    right: 5px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: solid 4px transparent;
+    border-bottom: none;
+    border-top-color: #fff;
+    transition: transform 0.5s;
+}
+
+.topbar2 .nav2 > ul > li:hover div.arrow {
+    transform: rotate(180deg);
+    /* transform-origin: 4px 0 ; */
+}
+
+.topbar2 .nav2 > ul > li .menu {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+    background-color: #fff;
+    top: 33px;
+    z-index: 9999;
+    display: none;
+    padding: 6px 0 6px 8px;
+}
+
+.topbar2 .nav2 > ul > li:hover .menu {
+    display: block;
+}
+
+.topbar2 .nav2 > ul > li .menu1 {
+    width: 160px;
+    /* height: 72px; */
+}
+
+.topbar2 .nav2 > ul > li .menu2 {
+    width: 100px;
+    /* height: 54px; */
+}
+
+.topbar2 .nav2 > ul > li .menu3 {
+    width: 168px;
+    /* height: 91px; */
+}
+
+.topbar2 .nav2 > ul > li .menu4 {
+    width: 114px;
+    /* height: 72px; */
+}
+
+.topbar2 .nav2 > ul > li .menu dl {
+    height: 22px;
+}
+
+.topbar2 .nav2 > ul > li .menu dt a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+    width: 100%;
+
+}
+
+.topbar2 .nav2 > ul > li .menu dt a:hover {
+    color: #20BD9A;
+} 
+
+.topbar2 .nav2 > ul > li .menu dd a {
+    font-size: 12px;
+    color: #1C1F21;
+    line-height: 18px;
+    margin-right: 6px;
+    float: left;
+}
+
+.topbar2 .nav2 > ul > li .menu dd a:hover {
+    color: #20BD9A;
+}
+
+.topbar3 {
+    width: 1355px;
+    margin: 21px auto;
+}
+
+.topbar3 .nav3 {
+    width: 1152px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 上面这行删掉也没有影响，为何这些地方都不需要清除浮动？ */
+    display:flex;
+    align-items:center;
+    
+}
+
+.topbar3 .nav3 h1 {
+    cursor: default;
+    float: left;
+    font-family: 'PingFang-SC-Medium';
+    font-size: 24px;
+    color: #20BD9A;
+    line-height: 36px;
+    height: 36px;
+    margin-right: 20px;
+
+}
+
+.topbar3 .nav3 .search  {
+    float: left;
+    width: 405px;
+    height: 30px;
+    position: relative;
+    display:flex;
+    align-items:center;
+}
+
+.topbar3 .nav3 #search {
+    width: 361px;
+    height: 28px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #20BD9A ;
+    /* 取消文本框默认外线 */
+    outline: none;
+    padding-left: 10px;
+    font-size: 14px;
+
+}
+
+.topbar3 .nav3 .btn {
+    width: 32px;
+    position: absolute;
+    right: 0;
+    height: 30px;
+    background-color: #20BD9A;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #20BD9A ;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner {
+    height: 420px;
+    width: 1355px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner>ul#carousel {
+    overflow: hidden;
+    width: 8130px;
+    transition: transform .6s ease 0s;
+
+}
+
+.banner>ul#carousel li {
+    float: left;
+}
+
+.banner .banner-img {
+    display: block;
+    height: 420px;
+    width: 1355px;  
+    
+}
+
+.banner ol {
+    width: 100px;
+    height: 10px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.banner ol li {
+    float: left;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.banner ol li:last-child{
+    margin-right: 0;
+
+}
+
+.banner ol li.cur {
+    background-color: #15AF7A;
+    width: 20px;
+}
+
+.banner .nav4 {
+    position: absolute;
+    width: 296px;
+    height: 420px;
+    left: 107px;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.banner .nav4 .lefticon {
+    /* display: block; */
+    /* 绝对定位、浮动、overflow：hidden会形成BFC,使行内元素变成块元素 */
+    background:url(../images/icons.png) -21px -94px ;
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    margin-top: -22px;
+
+}
+
+.banner .nav4 .righticon {
+    /* display: block; */
+    background:url(../images/icons.png) -21px -29px ;
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    right: -866px;
+    top: 50%;
+    margin-top: -22px;
+
+}
+
+.banner .nav4 .lefticon:hover, .banner .nav4 .righticon:hover {
+    opacity: 0.8;
+}
+
+.banner .nav4 > ul {
+    width: 296px;
+    height: 420px;
+    
+}
+
+.banner .nav4 > ul > li {
+    position: relative;
+    padding: 11px;
+    box-sizing: border-box;
+    width: 296px;
+    height: 70px;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+}
+
+.banner .nav4 > ul > li:hover {
+    background-color: rgba(0,0,0,0.55);
+}
+
+.banner .nav4 > ul > li:last-child {
+    border-bottom: none;
+}
+
+.banner .nav4 > ul > li dl {
+    margin-left: 31px;
+}
+
+.banner .nav4 > ul > li dt {
+    cursor:default;
+    width: 90px;
+    height: 26px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+
+}
+
+.banner .nav4 > ul > li dd {
+    cursor: default;
+}
+
+.banner .nav4 > ul > li dd span {
+    margin-right: 6px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.banner .nav4 > ul > li::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons.png);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+}
+
+.banner .nav4 > ul > li.hot::before {
+    background-position: -29px -397px;
+}
+
+.banner .nav4 > ul > li.hk::before {
+    background-position: -27px -347px;
+}
+
+.banner .nav4 > ul > li.jp::before {
+    background-position: -26px -303px;
+}
+
+.banner .nav4 > ul > li.as::before {
+    background-position: -26px -259px;
+}
+
+.banner .nav4 > ul > li.eu::before {
+    background-position: -25px -215px;
+}
+
+.banner .nav4 > ul > li.au::before {
+    background-position: -26px -168px;
+}
+
+.banner .nav4 > ul > li::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons8-chevron-right-24.png);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    right: 4px;
+
+}
+
+span {
+    cursor: default;
+}
+
+.banner .nav4 .right {
+    box-sizing: border-box;
+    padding: 16px;
+    position: absolute;
+    width: 356px;
+    height: 420px;
+    left: 296px;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+
+}
+
+.banner .nav4 .right.current {
+    display: block;
+    /* 这个地方还有问题，鼠标移开后不hover了会消失吗？ 要保持住,所以不用hover */
+}
+
+dl,dd,dt {
+    cursor: default;
+}
+
+.banner .nav4 .right dt {
+    height: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.banner .nav4 .right dd {
+    margin-bottom: 12px;
+}
+
+.banner .nav4 .right dd a {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: justify;
+    line-height: 22px;
+    margin-right: 4px;
+}
+
+
+.ads {
+    width: 1355px;
+    margin: 32px auto;
+    height: 110px;
+}
+
+.ads .nav5 {
+    width: 1152px;
+    margin: 0 auto;
+    height: 110px;
+}
+
+.ads .nav5 a {
+    float: left;
+    margin-right: 32px;
+
+}
+
+.ads .nav5 a:last-child {
+    margin-right: 0;
+}
+
+.new {
+    box-sizing: border-box;
+    width: 1355px;
+    height: 738px;
+    padding: 40px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+
+}
+
+.new .nav6 {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.new .nav6 .head {
+    display: flex;
+    justify-content:flex-start;
+    align-items: baseline;
+    
+}
+
+.new .nav6 .head h2 {
+    width: 144px;
+    height: 54px;
+    font-family: 'PingFang-SC-Medium';
+    color: #1C1F21;
+    font-size: 36px;
+    line-height: 54px;
+    margin-right: 12px;
+    cursor: default;
+}
+
+.new .nav6 .head span {
+    width: 108px;
+    height: 18px;
+    color: #1C1F21;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.new .nav6 .items {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.new .nav6 .items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.new .nav6 .items ul li {
+    width: 264px;
+    height: 270px;
+    margin-right: 32px;
+    background-color: #fff;
+    margin-top: 32px;
+}
+
+.new .nav6 .items ul li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+
+.new .nav6 .items ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.new .nav6 .items ul li a span {
+    display: block;
+    background-color: #fff;
+    color: #1C1F21 ;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    padding: 20px 14px; 
+}
+
+.eq {
+    width: 1355px;
+    height: 738px;
+    padding: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.eq .navx ,.play .nav8, .local .nav9 {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+    
+}
+
+.hd .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.hd h2{
+    height: 54px;
+    font-family: 'PingFang-SC-Medium';
+    color: #000;
+    font-size: 36px;
+    line-height: 54px;
+    margin-right: 12px;
+    cursor: default;
+}
+
+.hd .left span {
+    height: 18px;
+    color: #000;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hd .right ul {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.hd .right ul li {
+    height: 22px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 14px;
+}
+
+.hd .right ul li a {
+    color: rgba(0,0,0,0.85);
+    border: none;
+}
+
+.hd .right ul li a:hover {
+    color: #20BD9A;
+    border-bottom: 4px solid #20BD9A;
+    /* 似乎是js current类 */
+}
+
+.hd .right ul li:last-child {
+    margin-right: 0;
+}
+
+.eq .navx .items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.eq .navx .items > div {
+    position: relative;
+    margin-right: 32px;
+    margin-top: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.eq .navx .items > div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+
+.eq .navx .items > div:first-child {
+    box-shadow: 0;
+}
+
+.eq .navx .items > div:nth-child(3),.eq .navx .items > div:nth-child(7) {
+    margin-right: 0;
+}
+
+.travel .nav7 .items > div:last-child {
+    background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
+}
+
+.world .nav10 .items > div:last-child {
+    background-image: linear-gradient(180deg, #BD5EE8 0%, #832ABB 98%);
+}
+
+.group .nav11 .items > div:last-child {
+    background-image: linear-gradient(180deg, #41D8E9 0%, #3685EA 98%);
+}
+
+.eq .navx .items .large {
+    width: 560px;
+    height: 270px;
+}
+
+.travel .nav7 .items .large .desc {
+    position: absolute;
+    width: 100%;
+    height: 103px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px 26px 29px 26px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    box-sizing: border-box;
+    /* cursor: default; */
+
+}
+
+.eq .navx .items .small {
+    width: 264px;
+    height: 270px;
+}
+
+.eq .navx .items .small p {
+    padding: 20px 14px;
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+}
+
+.travel .nav7 .items > div .info {
+    position: absolute;
+    width: 74px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    top: 144px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    padding: 9px;
+    box-sizing: border-box;
+    cursor: default;
+    z-index: 9999;
+}
+
+.travel .nav7 .items > div:first-child .info {
+    top: 127px;
+}
+
+.eq .navx .items > div:last-child a {
+    display: flex;
+    /* align-items: center; */
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 264px;
+    height: 270px;
+    box-sizing: border-box;
+    padding: 46px 14px;
+}
+
+.eq .navx .items > div:last-child a p {
+    width: 236px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+    padding: 0;
+}
+
+.play {
+    width: 1355px;
+    height: 586px;
+    padding: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+.play .nav8 .items {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 32px;
+}
+
+.play .nav8 .items .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 364px;
+    height: 420px;
+    margin-right: 30px;
+
+}
+
+.play .nav8 .items .col:last-child {
+    margin-right: 0;
+}
+
+.play .nav8 .items .col .minor {
+    /* margin-top: 30px; */
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+}
+
+.play .nav8 .items .col .minor:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+
+.play .nav8 .items .col:first-child a > img {
+    display: block;
+    width: 364px;
+    height: 270px;
+}
+
+.play .nav8 .items .col .minor p {
+    width: 208px;
+    padding: 27px 18px ;
+    font-size: 14px;
+    color: #000000;
+    line-height: 22px;
+}
+
+.play .nav8 .items .col:first-child a:first-child {
+    position: relative;
+}
+
+.play .nav8 .items .col:first-child .desc {
+    width: 364px;
+    height: 104px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* align-items: center; */
+    /* justify-content定义一行items如何在水平方向上排列，align-items 定义一行items如何在垂直方向上排列，align-content定义多行items在垂直方向上的整体位置 ，默认值stretch*/
+    align-content: space-between;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    padding: 17px 21px;
+    box-sizing: border-box;
+}
+
+.play .nav8 .items .col:first-child .desc p:first-child {
+    width: 322px;
+    height: 44px;
+
+}
+
+.play .nav8 .items .col:first-child .desc em {
+    color: #36DFBA;
+}
+
+.play .nav8 .items .col .info {
+    width: 364px;
+    height: 270px;
+    background-image: linear-gradient(180deg, #FF6374 1%, #FF7368 98%);
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 46px 27px;
+
+}
+
+.play .nav8 .items .col .info p {
+    width: 310px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+    padding: 0;
+}
+
+.local {
+    width: 1355px;
+    height: 456px;
+    padding: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.local h2 {
+    text-align: center;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #1C1F21;
+    line-height: 54px;
+    cursor: default;
+}
+
+.local ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.local ul li {
+    width: 264px;
+    height: 290px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+}
+
+.local ul li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.local ul li img {
+    display: block;
+    width: 264px;
+    height: 184px;
+}
+
+.local ul li .info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    padding: 16px 8px;
+    height: 74px;
+    /* padding设为auto是无效的 */
+}
+
+.local ul li .info .desc {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
+    width: 242px;
+    height: 48px;
+}
+
+.local ul li .info .score {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #FA6400;
+    line-height: 14px;
+}
+
+.local ul li .info .comment {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #000000;
+    line-height: 14px;
+    padding-left: 5px;
+}
+
+/* 动画部分 */
+.content-part img {
+    transition: transform 0.5s;
+}
+
+.content-part img:hover {
+    transform: scale(1.1);
+}
+
+.content-part .items .picbox {
+    overflow: hidden;
+}
+.local .picbox {
+    overflow: hidden;
+}
+
+@keyframes up{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(16px);
+}
+}
+
+.content-part .more .icon-arrow-outline-right{
+ animation: up 0.5s ease 0s infinite alternate;
+}
+
+.eq .cover .coverbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+}
+
+.eq .cover:hover .coverbox {
+    opacity: 1;
+}
+
+.eq .cover .infobox {
+    width: 106px;
+    height: 106px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -53px;
+    top: -106px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: top 0.5s;
+    box-sizing: border-box;
+}
+
+.eq .cover .wordbox {
+    width: 508px;
+    height: 22px ;
+    position: absolute;
+    left: 50%;
+    margin-left: -254px;
+    bottom: -22px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    transition: bottom 0.5s;
+}
+
+.eq .cover:hover .infobox {
+    top: 62px;
+}
+
+.eq .cover:hover .wordbox {
+    bottom: 30px;
+}
+
+footer .footer-top {
+    width: 1355px;
+    height: 220px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+footer .footer-top .center ,footer .footer-bottom .center  {
+    width: 1152px;
+    margin: 0 auto;
+    padding: 36px 0 40px;
+}
+
+footer .footer-top .center ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1152px;
+    height: 28px;
+    margin-bottom: 40px;
+}
+
+footer .footer-top .center ul li {
+    font-size: 18px;
+    line-height: 16px;
+    border-right: 2px solid #000;
+    padding: 0 22px;
+    height: 16px;
+}
+
+footer .footer-top .center ul li:last-child {
+    border-right: none;
+}
+
+footer .footer-top .center ul li a {
+    color: #1C1F21;
+}
+
+footer .footer-top .center .safe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-top .center .safe dl{
+    padding-left: 75px;
+    padding-right: 30px;
+    position: relative;
+}
+
+footer .footer-top .center .safe dl:last-child {
+    padding-right: 0;
+}
+
+
+footer .footer-top .center .safe dl::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/icons.png);
+}
+
+footer .footer-top .center .safe dl:nth-child(1)::before {
+    background-position: -150px -178px;
+}
+
+footer .footer-top .center .safe dl:nth-child(2)::before {
+    background-position: -150px -178px;
+}
+
+footer .footer-top .center .safe dl:nth-child(3)::before {
+    background-position: -150px -178px;
+}
+
+footer .footer-top .center .safe dl dt {
+    font-size: 16px;
+    color: #1C1F21;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer .footer-top .center .safe dl dd {
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+}
+
+footer .footer-bottom {
+    width: 1355px;
+    height: 225px;
+    margin: 0 auto;
+    background-color: #1C1F21;
+}
+
+footer .footer-bottom .name {
+    height: 46px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 31px;
+}
+
+footer .footer-bottom .name h2 {
+    font-size: 46px;
+    color: #FFFFFF;
+    line-height: 46px;
+    margin-right: 21px;
+}
+
+footer .footer-bottom .name span {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;  
+    width: 532px;
+    margin-top: 5px;
+}
+
+footer .footer-bottom .moreinfo ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+
+}
+
+footer .footer-bottom .moreinfo ul li {
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    line-height: 15px;
+    height: 15px;
+}
+
+footer .footer-bottom .moreinfo ul li a {
+    color: #FFFFFF;
+}
+
+footer .footer-bottom .moreinfo ul li:first-child {
+    padding-left: 0;
+}
+
+footer .footer-bottom .moreinfo ul li:last-child {
+    border-right: none;
+}
+
+footer .footer-bottom .moreinfo .icp {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+}
+
+footer .footer-bottom .moreinfo .icp a {
+    color: #FFFFFF;
+}
+
+@keyframes backtotop {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}
+
+
+
+.backtop {
+    display: none;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #15AF7A;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    opacity: 70%;
+    animation: backtotop 0.5s ease 0s infinite alternate;
+}
+
+.backtop a {
+    font-size: 25px;
+    padding-left: 20px;
+    line-height: 65px;
+    color: white;
+    user-select: none;
+}
+

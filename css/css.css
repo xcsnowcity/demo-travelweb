@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'PingFang-SC-Regular';
+    src: url(../font/PingFang-SC-Regular.ttf);
+}
+
+body {
+    font-family: 'PingFang-SC-Regular';
+}
+
+.topbar1 {
+    background-color: #2A2A2A;
+}
+
+.topbar1 .nav1 {
+    width: 1152px;
+    height: 32px;
+    margin: 0 auto;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+}
+
+.topbar1 .nav1 > ul {
+    float: left;
+    width: 408px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.topbar1 .nav1 > ul > li {
+    float: left ;
+    height: 18px;
+    margin-right: 18px;
+    display:flex;
+    align-items:center;
+    font-size: 12px;
+    position: relative;
+}
+
+.topbar1 .nav1 a {
+    display:flex;
+    align-items:center;
+    color:#fff;  
+    /* 超级链接不从父亲继承颜色 */
+}
+
+svg.down {
+    /* margin-top: 2px; */
+    padding-left: 2px;
+    /* display: block; */
+}
+
+svg.up {
+    position: absolute;
+    right: 2px;
+    display: none;
+}
+
+.topbar1 .nav1 > ul li:nth-child(3):hover svg.up {
+    display: block;
+} 
+
+.topbar1 .nav1 > ul li:nth-child(3):hover svg.down {
+    display: none;
+}
+
+.topbar1 .nav1 > ul li:nth-child(5):hover svg.up {
+    display: block;
+} 
+
+.topbar1 .nav1 > ul li:nth-child(5):hover svg.down {
+    display: none;
+}
+
+.topbar1 .nav1 > ul li:nth-child(6):hover svg.up {
+    display: block;
+} 
+
+.topbar1 .nav1 > ul li:nth-child(6):hover svg.down {
+    display: none;
+}
+
+.topbar1 .nav1 > ul > li:hover > a {
+    color:#20BD9A;
+}
+
+.topbar1 .nav1 > ul > li:last-child {
+    margin-right: 0;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(1) {
+    width: 36px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(2) {
+    width: 24px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(3) {
+    width: 38px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(4) {
+    width: 48px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(5) {
+    width: 38px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(6) {
+    width: 68px;
+}
+
+.topbar1 .nav1 > ul > li:nth-child(7) {
+    width: 48px;
+}
+
+
+
